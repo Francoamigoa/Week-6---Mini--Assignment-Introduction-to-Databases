@@ -1,6 +1,3 @@
-
-
-
 SELECT COUNT(*) AS total_rows_before
 FROM university_rankings;
 
@@ -32,4 +29,5 @@ SELECT country, COUNT(*) AS n_universities
 FROM university_rankings
 GROUP BY country
 ORDER BY n_universities DESC
+
 LIMIT 10;
